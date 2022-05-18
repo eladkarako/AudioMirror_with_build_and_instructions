@@ -1,0 +1,37 @@
+﻿
+Project Performance Summary:
+       55 ms  C:\Users\Elad\Desktop\AudioMirror\AudioMirror\AudioMirror.vcxproj   1 calls
+                 55 ms  Clean                                      1 calls
+
+Target Performance Summary:
+        0 ms  CleanReferencedProjects                    1 calls
+        0 ms  AfterCppClean                              1 calls
+        0 ms  BeforeCppClean                             1 calls
+        0 ms  AfterClean                                 1 calls
+        0 ms  CppClean                                   1 calls
+        0 ms  PrepareProjectReferences                   1 calls
+        0 ms  Clean                                      1 calls
+        0 ms  _SplitProjectReferencesByFileExistence     1 calls
+        0 ms  BeforeClean                                1 calls
+        0 ms  CleanPublishFolder                         1 calls
+        1 ms  PGInstrumentedClean                        1 calls
+        1 ms  AssignProjectConfiguration                 1 calls
+        1 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
+        1 ms  _PrepareForClean                           1 calls
+        3 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+        3 ms  CoreClean                                  1 calls
+        8 ms  CleanOutput                                1 calls
+       35 ms  CoreCppClean                               1 calls
+
+Task Performance Summary:
+        0 ms  ReadLinesFromFile                          1 calls
+        0 ms  RemoveDuplicates                           1 calls
+        0 ms  MakeDir                                    2 calls
+        0 ms  Message                                    2 calls
+        1 ms  AssignProjectConfiguration                 1 calls
+        1 ms  FindUnderPath                              2 calls
+        1 ms  MSBuild                                    1 calls
+        2 ms  RemoveDir                                  1 calls
+        2 ms  WriteLinesToFile                           2 calls
+        3 ms  Delete                                     6 calls
+       33 ms  CppClean                                   1 calls

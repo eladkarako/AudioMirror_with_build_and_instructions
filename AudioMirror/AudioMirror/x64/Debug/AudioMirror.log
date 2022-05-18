@@ -1,0 +1,1331 @@
+﻿  Building 'AudioMirror' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\AudioMirror.inf
+  Stamping [Version] section with DriverVer=05/17/2022,18.43.47.932
+C:\Users\Elad\Desktop\AudioMirror\AudioMirror\AudioMirror.inf(5-5): warning 1324: [Version] section should specify PnpLockdown=1.
+  AdapterCommon.cpp
+  Driver.cpp
+  KsHelper.cpp
+  MinipairDescriptorFactory.cpp
+  MiniportTopology.cpp
+  MiniportWaveRT.cpp
+  MiniportWaveRTStream.cpp
+  MiniportWaveRTStreamAudioEngineNode.cpp
+  NewDelete.cpp
+  RegistryHelper.cpp
+  RingBuffer.cpp
+  SubdeviceCache.cpp
+  SubdeviceHelper.cpp
+  Generating Code...
+  Processed /NODEFAULTLIB (suppressing all default libs)
+  
+  Starting pass 1
+  
+  Searching libraries
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\portcls.lib:
+        Found __imp_PcGetPhysicalDeviceObject
+          Referenced in AdapterCommon.obj
+          Loaded portcls.lib(portcls.sys)
+        Found __imp_PcInitializeAdapterDriver
+          Referenced in Driver.obj
+          Loaded portcls.lib(portcls.sys)
+        Found __imp_PcDispatchIrp
+          Referenced in Driver.obj
+          Loaded portcls.lib(portcls.sys)
+        Found __imp_PcAddAdapterDevice
+          Referenced in Driver.obj
+          Loaded portcls.lib(portcls.sys)
+        Found __imp_PcRegisterSubdevice
+          Referenced in SubdeviceHelper.obj
+          Loaded portcls.lib(portcls.sys)
+        Found __imp_PcRegisterPhysicalConnection
+          Referenced in SubdeviceHelper.obj
+          Loaded portcls.lib(portcls.sys)
+        Found __imp_PcNewPort
+          Referenced in SubdeviceHelper.obj
+          Loaded portcls.lib(portcls.sys)
+        Found __imp_PcNewMiniport
+          Referenced in SubdeviceHelper.obj
+          Loaded portcls.lib(portcls.sys)
+        Found __IMPORT_DESCRIPTOR_portcls
+          Referenced in portcls.lib(portcls.sys)
+          Referenced in portcls.lib(portcls.sys)
+          Referenced in portcls.lib(portcls.sys)
+          Referenced in portcls.lib(portcls.sys)
+          Referenced in portcls.lib(portcls.sys)
+          Referenced in portcls.lib(portcls.sys)
+          Referenced in portcls.lib(portcls.sys)
+          Referenced in portcls.lib(portcls.sys)
+          Loaded portcls.lib(portcls.sys)
+        Found __NULL_IMPORT_DESCRIPTOR
+          Referenced in portcls.lib(portcls.sys)
+          Loaded portcls.lib(portcls.sys)
+        Found portcls_NULL_THUNK_DATA
+          Referenced in portcls.lib(portcls.sys)
+          Loaded portcls.lib(portcls.sys)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\stdunk.lib:
+        Found "public: __cdecl CUnknown::CUnknown(struct IUnknown *)" (??0CUnknown@@QEAA@PEAUIUnknown@@@Z)
+          Referenced in AdapterCommon.obj
+          Referenced in MiniportTopology.obj
+          Referenced in MiniportWaveRT.obj
+          Loaded stdunk.lib(stdunk.obj)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\libcntpr.lib:
+        Found __guard_dispatch_icall_fptr
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in MiniportWaveRTStreamAudioEngineNode.obj
+          Referenced in SubdeviceCache.obj
+          Referenced in SubdeviceHelper.obj
+          Referenced in AdapterCommon.obj
+          Referenced in Driver.obj
+          Referenced in MiniportTopology.obj
+          Referenced in MiniportWaveRT.obj
+          Loaded libcntpr.lib(guard_support.obj)
+        Found memcmp
+          Referenced in KsHelper.obj
+          Referenced in MiniportWaveRT.obj
+          Loaded libcntpr.lib(memcmp.obj)
+        Found __GSHandlerCheck
+          Referenced in MiniportWaveRT.obj
+          Loaded libcntpr.lib(gshandler.obj)
+        Found _guard_dispatch_icall_nop
+          Referenced in libcntpr.lib(guard_support.obj)
+          Loaded libcntpr.lib(guard_dispatch.obj)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\BufferOverflowFastFailK.lib:
+        Found __security_check_cookie
+          Referenced in MiniportWaveRT.obj
+          Referenced in libcntpr.lib(gshandler.obj)
+          Loaded BufferOverflowFastFailK.lib(amdsecgs.obj)
+        Found __security_cookie
+          Referenced in MiniportWaveRT.obj
+          Referenced in BufferOverflowFastFailK.lib(amdsecgs.obj)
+          Loaded BufferOverflowFastFailK.lib(gs_support.obj)
+        Found __report_gsfailure
+          Referenced in BufferOverflowFastFailK.lib(amdsecgs.obj)
+          Loaded BufferOverflowFastFailK.lib(gs_report.obj)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\ntoskrnl.lib:
+        Found __imp_RtlAssert
+          Referenced in MiniportWaveRT.obj
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in MiniportWaveRTStreamAudioEngineNode.obj
+          Referenced in SubdeviceHelper.obj
+          Referenced in AdapterCommon.obj
+          Referenced in Driver.obj
+          Referenced in KsHelper.obj
+          Referenced in MiniportTopology.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found DbgPrint
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in RingBuffer.obj
+          Referenced in SubdeviceCache.obj
+          Referenced in SubdeviceHelper.obj
+          Referenced in AdapterCommon.obj
+          Referenced in Driver.obj
+          Referenced in MiniportTopology.obj
+          Referenced in MiniportWaveRT.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExFreePoolWithTag
+          Referenced in RegistryHelper.obj
+          Referenced in RingBuffer.obj
+          Referenced in AdapterCommon.obj
+          Referenced in MiniportWaveRT.obj
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in NewDelete.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_DbgPrintEx
+          Referenced in Driver.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_KeInitializeEvent
+          Referenced in MiniportWaveRT.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExAllocatePoolWithTag
+          Referenced in RingBuffer.obj
+          Referenced in MiniportWaveRT.obj
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in NewDelete.obj
+          Referenced in RegistryHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExAcquireFastMutex
+          Referenced in MiniportWaveRT.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExReleaseFastMutex
+          Referenced in MiniportWaveRT.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_KeFlushQueuedDpcs
+          Referenced in MiniportWaveRTStream.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_KeSetEvent
+          Referenced in MiniportWaveRTStream.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_KeInitializeSpinLock
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in RingBuffer.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_KeAcquireSpinLockRaiseToDpc
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in MiniportWaveRTStreamAudioEngineNode.obj
+          Referenced in RingBuffer.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_KeReleaseSpinLock
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in MiniportWaveRTStreamAudioEngineNode.obj
+          Referenced in RingBuffer.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExAllocateTimer
+          Referenced in MiniportWaveRTStream.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExSetTimer
+          Referenced in MiniportWaveRTStream.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExCancelTimer
+          Referenced in MiniportWaveRTStream.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExDeleteTimer
+          Referenced in MiniportWaveRTStream.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_RtlInitUnicodeString
+          Referenced in RegistryHelper.obj
+          Referenced in SubdeviceHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ZwClose
+          Referenced in RegistryHelper.obj
+          Referenced in SubdeviceHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ZwCreateKey
+          Referenced in RegistryHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ZwOpenKey
+          Referenced in RegistryHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ZwEnumerateKey
+          Referenced in RegistryHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ZwEnumerateValueKey
+          Referenced in RegistryHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ZwSetValueKey
+          Referenced in RegistryHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_RtlFreeUnicodeString
+          Referenced in SubdeviceHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_IoRegisterDeviceInterface
+          Referenced in SubdeviceHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_IoOpenDeviceInterfaceRegistryKey
+          Referenced in SubdeviceHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_IoSetDeviceInterfacePropertyData
+          Referenced in SubdeviceHelper.obj
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __imp_ExFreePool
+          Referenced in stdunk.lib(stdunk.obj)
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found __IMPORT_DESCRIPTOR_ntoskrnl
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+        Found ntoskrnl_NULL_THUNK_DATA
+          Referenced in ntoskrnl.lib(ntoskrnl.exe)
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\hal.lib:
+        Found __imp_KeQueryPerformanceCounter
+          Referenced in MiniportWaveRTStream.obj
+          Referenced in MiniportWaveRTStreamAudioEngineNode.obj
+          Loaded hal.lib(HAL.dll)
+        Found __IMPORT_DESCRIPTOR_HAL
+          Referenced in hal.lib(HAL.dll)
+          Loaded hal.lib(HAL.dll)
+        Found HAL_NULL_THUNK_DATA
+          Referenced in hal.lib(HAL.dll)
+          Loaded hal.lib(HAL.dll)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\wmilib.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib:
+        Found FxDriverEntry
+          Loaded WdfDriverEntry.lib(stub.obj)
+        Found "long __cdecl FxStubInitTypes(void)" (?FxStubInitTypes@@YAJXZ)
+          Referenced in WdfDriverEntry.lib(stub.obj)
+          Loaded WdfDriverEntry.lib(inittypes.obj)
+        Found "void __cdecl FxStubUnbindClasses(struct _WDF_BIND_INFO *)" (?FxStubUnbindClasses@@YAXPEAU_WDF_BIND_INFO@@@Z)
+          Referenced in WdfDriverEntry.lib(stub.obj)
+          Loaded WdfDriverEntry.lib(classbind.obj)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\portcls.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\stdunk.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\libcntpr.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\BufferOverflowFastFailK.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\ntoskrnl.lib:
+        Found __imp_RtlCopyUnicodeString
+          Referenced in WdfDriverEntry.lib(stub.obj)
+          Loaded ntoskrnl.lib(ntoskrnl.exe)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\hal.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\wmilib.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib:
+        Found WdfVersionBind
+          Referenced in WdfDriverEntry.lib(stub.obj)
+          Loaded WdfLdr.lib(WDFLDR.SYS)
+        Found WdfVersionUnbind
+          Referenced in WdfDriverEntry.lib(stub.obj)
+          Loaded WdfLdr.lib(WDFLDR.SYS)
+        Found WdfVersionBindClass
+          Referenced in WdfDriverEntry.lib(classbind.obj)
+          Loaded WdfLdr.lib(WDFLDR.SYS)
+        Found WdfVersionUnbindClass
+          Referenced in WdfDriverEntry.lib(classbind.obj)
+          Loaded WdfLdr.lib(WDFLDR.SYS)
+        Found __IMPORT_DESCRIPTOR_WDFLDR
+          Referenced in WdfLdr.lib(WDFLDR.SYS)
+          Referenced in WdfLdr.lib(WDFLDR.SYS)
+          Referenced in WdfLdr.lib(WDFLDR.SYS)
+          Referenced in WdfLdr.lib(WDFLDR.SYS)
+          Loaded WdfLdr.lib(WDFLDR.SYS)
+        Found WDFLDR_NULL_THUNK_DATA
+          Referenced in WdfLdr.lib(WDFLDR.SYS)
+          Loaded WdfLdr.lib(WDFLDR.SYS)
+  
+  Finished searching libraries
+  
+  Finished pass 1
+  
+  
+  Searching libraries
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\portcls.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\stdunk.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\libcntpr.lib:
+        Found _load_config_used
+          Loaded libcntpr.lib(loadcfg.obj)
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\BufferOverflowFastFailK.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\ntoskrnl.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\hal.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\wmilib.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\portcls.lib:
+      Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\\stdunk.lib:
+  
+  Finished searching libraries
+  
+  
+  Unused libraries:
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\km\x64\wmilib.lib
+  
+      Discarded IID_IPort from AdapterCommon.obj
+      Discarded IID_IResourceList from AdapterCommon.obj
+      Discarded IID_IMusicTechnology from AdapterCommon.obj
+      Discarded IID_IDmaChannel from AdapterCommon.obj
+      Discarded IID_IInterruptSync from AdapterCommon.obj
+      Discarded IID_IServiceSink from AdapterCommon.obj
+      Discarded IID_IServiceGroup from AdapterCommon.obj
+      Discarded IID_IRegistryKey from AdapterCommon.obj
+      Discarded IID_IPortMidi from AdapterCommon.obj
+      Discarded IID_IMiniportMidi from AdapterCommon.obj
+      Discarded IID_IMiniportMidiStream from AdapterCommon.obj
+      Discarded IID_IPortWaveCyclic from AdapterCommon.obj
+      Discarded IID_IMiniportWaveCyclic from AdapterCommon.obj
+      Discarded IID_IMiniportWaveCyclicStream from AdapterCommon.obj
+      Discarded IID_IPortWavePci from AdapterCommon.obj
+      Discarded IID_IPortWavePciStream from AdapterCommon.obj
+      Discarded IID_IMiniportWavePci from AdapterCommon.obj
+      Discarded IID_IMiniportWavePciStream from AdapterCommon.obj
+      Discarded IID_IPortWaveRTStream from AdapterCommon.obj
+      Discarded IID_IPortWMIRegistration from AdapterCommon.obj
+      Discarded IID_IPortClsSubdeviceEx from AdapterCommon.obj
+      Discarded IID_IPortClsPower from AdapterCommon.obj
+      Discarded IID_IPortClsRuntimePower from AdapterCommon.obj
+      Discarded IID_IPinName from AdapterCommon.obj
+      Discarded IID_IPortClsEtwHelper from AdapterCommon.obj
+      Discarded IID_IPortClsStreamResourceManager from AdapterCommon.obj
+      Discarded IID_IPortClsStreamResourceManager2 from AdapterCommon.obj
+      Discarded IID_IAdapterPnpManagement from AdapterCommon.obj
+      Discarded IID_IMiniportPnpNotify from AdapterCommon.obj
+      Discarded IID_IPortClsPnp from AdapterCommon.obj
+      Discarded IID_IAdapterPowerManagement2 from AdapterCommon.obj
+      Discarded IID_IAdapterPowerManagement3 from AdapterCommon.obj
+      Discarded IID_IPowerNotify from AdapterCommon.obj
+      Discarded IID_IWaveCyclicClock from AdapterCommon.obj
+      Discarded IID_IWavePciClock from AdapterCommon.obj
+      Discarded IID_IPortEvents from AdapterCommon.obj
+      Discarded IID_IDrmPort from AdapterCommon.obj
+      Discarded IID_IDrmPort2 from AdapterCommon.obj
+      Discarded IID_IPortClsVersion from AdapterCommon.obj
+      Discarded IID_IPinCount from AdapterCommon.obj
+      Discarded IID_IPreFetchOffset from AdapterCommon.obj
+      Discarded IID_IUnregisterSubdevice from AdapterCommon.obj
+      Discarded CLSID_PortMidi from AdapterCommon.obj
+      Discarded CLSID_PortWaveCyclic from AdapterCommon.obj
+      Discarded CLSID_PortWavePci from AdapterCommon.obj
+      Discarded CLSID_MiniportDriverFmSynth from AdapterCommon.obj
+      Discarded CLSID_MiniportDriverUart from AdapterCommon.obj
+      Discarded CLSID_MiniportDriverFmSynthWithVol from AdapterCommon.obj
+      Discarded DEVPKEY_KsAudio_PacketSize_Constraints from AdapterCommon.obj
+      Discarded DEVPKEY_KsAudio_Controller_DeviceInterface_Path from AdapterCommon.obj
+      Discarded DEVPKEY_KsAudio_PacketSize_Constraints2 from AdapterCommon.obj
+      Discarded IID_IMiniportAudioEngineNode from AdapterCommon.obj
+      Discarded IID_IMiniportAudioSignalProcessing from AdapterCommon.obj
+      Discarded IID_IPortClsNotifications from AdapterCommon.obj
+      Discarded EventTraceGuid from AdapterCommon.obj
+      Discarded SystemTraceControlGuid from AdapterCommon.obj
+      Discarded EventTraceConfigGuid from AdapterCommon.obj
+      Discarded DefaultTraceSecurityGuid from AdapterCommon.obj
+      Discarded PrivateLoggerNotificationGuid from AdapterCommon.obj
+      Discarded GUID_MAX_POWER_SAVINGS from AdapterCommon.obj
+      Discarded GUID_MIN_POWER_SAVINGS from AdapterCommon.obj
+      Discarded GUID_TYPICAL_POWER_SAVINGS from AdapterCommon.obj
+      Discarded NO_SUBGROUP_GUID from AdapterCommon.obj
+      Discarded ALL_POWERSCHEMES_GUID from AdapterCommon.obj
+      Discarded GUID_POWERSCHEME_PERSONALITY from AdapterCommon.obj
+      Discarded GUID_ACTIVE_POWERSCHEME from AdapterCommon.obj
+      Discarded GUID_IDLE_RESILIENCY_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_IDLE_RESILIENCY_PERIOD from AdapterCommon.obj
+      Discarded GUID_DEEP_SLEEP_ENABLED from AdapterCommon.obj
+      Discarded GUID_DEEP_SLEEP_PLATFORM_STATE from AdapterCommon.obj
+      Discarded GUID_DISK_COALESCING_POWERDOWN_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_EXECUTION_REQUIRED_REQUEST_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_VIDEO_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_VIDEO_POWERDOWN_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_VIDEO_ANNOYANCE_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_VIDEO_ADAPTIVE_PERCENT_INCREASE from AdapterCommon.obj
+      Discarded GUID_VIDEO_DIM_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_VIDEO_ADAPTIVE_POWERDOWN from AdapterCommon.obj
+      Discarded GUID_MONITOR_POWER_ON from AdapterCommon.obj
+      Discarded GUID_DEVICE_POWER_POLICY_VIDEO_BRIGHTNESS from AdapterCommon.obj
+      Discarded GUID_DEVICE_POWER_POLICY_VIDEO_DIM_BRIGHTNESS from AdapterCommon.obj
+      Discarded GUID_VIDEO_CURRENT_MONITOR_BRIGHTNESS from AdapterCommon.obj
+      Discarded GUID_VIDEO_ADAPTIVE_DISPLAY_BRIGHTNESS from AdapterCommon.obj
+      Discarded GUID_CONSOLE_DISPLAY_STATE from AdapterCommon.obj
+      Discarded GUID_ALLOW_DISPLAY_REQUIRED from AdapterCommon.obj
+      Discarded GUID_VIDEO_CONSOLE_LOCK_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_ADVANCED_COLOR_QUALITY_BIAS from AdapterCommon.obj
+      Discarded GUID_ADAPTIVE_POWER_BEHAVIOR_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_NON_ADAPTIVE_INPUT_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_ADAPTIVE_INPUT_CONTROLLER_STATE from AdapterCommon.obj
+      Discarded GUID_DISK_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_DISK_MAX_POWER from AdapterCommon.obj
+      Discarded GUID_DISK_POWERDOWN_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_DISK_IDLE_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_DISK_BURST_IGNORE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_DISK_ADAPTIVE_POWERDOWN from AdapterCommon.obj
+      Discarded GUID_DISK_NVME_NOPPME from AdapterCommon.obj
+      Discarded GUID_SLEEP_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_SLEEP_IDLE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_STANDBY_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_UNATTEND_SLEEP_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_HIBERNATE_TIMEOUT from AdapterCommon.obj
+      Discarded GUID_HIBERNATE_FASTS4_POLICY from AdapterCommon.obj
+      Discarded GUID_CRITICAL_POWER_TRANSITION from AdapterCommon.obj
+      Discarded GUID_SYSTEM_AWAYMODE from AdapterCommon.obj
+      Discarded GUID_ALLOW_AWAYMODE from AdapterCommon.obj
+      Discarded GUID_USER_PRESENCE_PREDICTION from AdapterCommon.obj
+      Discarded GUID_STANDBY_BUDGET_GRACE_PERIOD from AdapterCommon.obj
+      Discarded GUID_STANDBY_BUDGET_PERCENT from AdapterCommon.obj
+      Discarded GUID_STANDBY_RESERVE_GRACE_PERIOD from AdapterCommon.obj
+      Discarded GUID_STANDBY_RESERVE_TIME from AdapterCommon.obj
+      Discarded GUID_STANDBY_RESET_PERCENT from AdapterCommon.obj
+      Discarded GUID_ALLOW_STANDBY_STATES from AdapterCommon.obj
+      Discarded GUID_ALLOW_RTC_WAKE from AdapterCommon.obj
+      Discarded GUID_LEGACY_RTC_MITIGATION from AdapterCommon.obj
+      Discarded GUID_ALLOW_SYSTEM_REQUIRED from AdapterCommon.obj
+      Discarded GUID_POWER_SAVING_STATUS from AdapterCommon.obj
+      Discarded GUID_ENERGY_SAVER_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_ENERGY_SAVER_BATTERY_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_ENERGY_SAVER_BRIGHTNESS from AdapterCommon.obj
+      Discarded GUID_ENERGY_SAVER_POLICY from AdapterCommon.obj
+      Discarded GUID_SYSTEM_BUTTON_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_POWERBUTTON_ACTION from AdapterCommon.obj
+      Discarded GUID_SLEEPBUTTON_ACTION from AdapterCommon.obj
+      Discarded GUID_USERINTERFACEBUTTON_ACTION from AdapterCommon.obj
+      Discarded GUID_LIDCLOSE_ACTION from AdapterCommon.obj
+      Discarded GUID_LIDOPEN_POWERSTATE from AdapterCommon.obj
+      Discarded GUID_BATTERY_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_ACTION_0 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_LEVEL_0 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_FLAGS_0 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_ACTION_1 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_LEVEL_1 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_FLAGS_1 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_ACTION_2 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_LEVEL_2 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_FLAGS_2 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_ACTION_3 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_LEVEL_3 from AdapterCommon.obj
+      Discarded GUID_BATTERY_DISCHARGE_FLAGS_3 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_SETTINGS_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_THROTTLE_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_THROTTLE_MAXIMUM from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_THROTTLE_MAXIMUM_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_THROTTLE_MINIMUM from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_THROTTLE_MINIMUM_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_FREQUENCY_LIMIT from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_FREQUENCY_LIMIT_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_ALLOW_THROTTLING from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_IDLESTATE_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERFSTATE_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_INCREASE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_INCREASE_THRESHOLD_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_DECREASE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_DECREASE_THRESHOLD_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_INCREASE_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_INCREASE_POLICY_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_DECREASE_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_DECREASE_POLICY_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_INCREASE_TIME from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_INCREASE_TIME_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_DECREASE_TIME from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_DECREASE_TIME_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_TIME_CHECK from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_BOOST_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_BOOST_MODE from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_AUTONOMOUS_MODE from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_ENERGY_PERFORMANCE_PREFERENCE from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_ENERGY_PERFORMANCE_PREFERENCE_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_AUTONOMOUS_ACTIVITY_WINDOW from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_DUTY_CYCLING from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_IDLE_ALLOW_SCALING from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_IDLE_DISABLE from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_IDLE_STATE_MAXIMUM from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_IDLE_TIME_CHECK from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_IDLE_DEMOTE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_IDLE_PROMOTE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_INCREASE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_DECREASE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_INCREASE_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_DECREASE_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_MAX_CORES from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_MAX_CORES_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_MIN_CORES from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_MIN_CORES_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_INCREASE_TIME from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_DECREASE_TIME from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_DECREASE_FACTOR from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_AFFINITY_WEIGHTING from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_DECREASE_FACTOR from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_WEIGHTING from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PARKING_CORE_OVERRIDE from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PARKING_PERF_STATE from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PARKING_PERF_STATE_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PARKING_CONCURRENCY_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PARKING_HEADROOM_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PARKING_DISTRIBUTION_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_SOFT_PARKING_LATENCY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_HISTORY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_HISTORY_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_INCREASE_HISTORY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_DECREASE_HISTORY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_CORE_PARKING_HISTORY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_LATENCY_HINT from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_LATENCY_HINT_PERF from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_PERF_LATENCY_HINT_PERF_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_LATENCY_HINT_MIN_UNPARK from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_LATENCY_HINT_MIN_UNPARK_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_DISTRIBUTE_UTILITY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_HETEROGENEOUS_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_HETERO_DECREASE_TIME from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_HETERO_INCREASE_TIME from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_HETERO_DECREASE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_HETERO_INCREASE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CLASS0_FLOOR_PERF from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_CLASS1_INITIAL_PERF from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_THREAD_SCHEDULING_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_SHORT_THREAD_SCHEDULING_POLICY from AdapterCommon.obj
+      Discarded GUID_SYSTEM_COOLING_POLICY from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_DISABLE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_DISABLE_THRESHOLD_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_ENABLE_THRESHOLD from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_ENABLE_THRESHOLD_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_DISABLE_TIME from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_DISABLE_TIME_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_ENABLE_TIME from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_ENABLE_TIME_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_EPP_CEILING from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_EPP_CEILING_1 from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_PERF_FLOOR from AdapterCommon.obj
+      Discarded GUID_PROCESSOR_RESPONSIVENESS_PERF_FLOOR_1 from AdapterCommon.obj
+      Discarded GUID_LOCK_CONSOLE_ON_WAKE from AdapterCommon.obj
+      Discarded GUID_DEVICE_IDLE_POLICY from AdapterCommon.obj
+      Discarded GUID_CONNECTIVITY_IN_STANDBY from AdapterCommon.obj
+      Discarded GUID_DISCONNECTED_STANDBY_MODE from AdapterCommon.obj
+      Discarded GUID_ACDC_POWER_SOURCE from AdapterCommon.obj
+      Discarded GUID_LIDSWITCH_STATE_CHANGE from AdapterCommon.obj
+      Discarded GUID_BATTERY_PERCENTAGE_REMAINING from AdapterCommon.obj
+      Discarded GUID_BATTERY_COUNT from AdapterCommon.obj
+      Discarded GUID_GLOBAL_USER_PRESENCE from AdapterCommon.obj
+      Discarded GUID_SESSION_DISPLAY_STATUS from AdapterCommon.obj
+      Discarded GUID_SESSION_USER_PRESENCE from AdapterCommon.obj
+      Discarded GUID_IDLE_BACKGROUND_TASK from AdapterCommon.obj
+      Discarded GUID_BACKGROUND_TASK_NOTIFICATION from AdapterCommon.obj
+      Discarded GUID_APPLAUNCH_BUTTON from AdapterCommon.obj
+      Discarded GUID_PCIEXPRESS_SETTINGS_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_PCIEXPRESS_ASPM_POLICY from AdapterCommon.obj
+      Discarded GUID_ENABLE_SWITCH_FORCED_SHUTDOWN from AdapterCommon.obj
+      Discarded GUID_INTSTEER_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_INTSTEER_MODE from AdapterCommon.obj
+      Discarded GUID_INTSTEER_LOAD_PER_PROC_TRIGGER from AdapterCommon.obj
+      Discarded GUID_INTSTEER_TIME_UNPARK_TRIGGER from AdapterCommon.obj
+      Discarded GUID_GRAPHICS_SUBGROUP from AdapterCommon.obj
+      Discarded GUID_GPU_PREFERENCE_POLICY from AdapterCommon.obj
+      Discarded GUID_MIXED_REALITY_MODE from AdapterCommon.obj
+      Discarded GUID_SPR_ACTIVE_SESSION_CHANGE from AdapterCommon.obj
+      Discarded _GUID_4d837fe0_c555_11d0_8a2b_00a0c9255ac1 from MinipairDescriptorFactory.obj
+      Discarded WdfDumpGuid2 from WdfDriverEntry.lib(stub.obj)
+      Discarded WdfDumpGuid from WdfDriverEntry.lib(stub.obj)
+      Discarded GUID_WDF_LOADER_INTERFACE_DIAGNOSTIC from WdfDriverEntry.lib(stub.obj)
+      Discarded GUID_WDF_LOADER_INTERFACE_STANDARD from WdfDriverEntry.lib(stub.obj)
+      Discarded WdfTraceGuid from WdfDriverEntry.lib(stub.obj)
+      Discarded GUID_WDF_LOADER_INTERFACE_CLASS_BIND from WdfDriverEntry.lib(stub.obj)
+      Discarded $unwind$?PropertyHandler_BasicSupportPeakMeter2@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z from KsHelper.obj
+      Discarded $unwind$?PropertyHandler_BasicSupportMute@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z from KsHelper.obj
+      Discarded $unwind$?PropertyHandler_BasicSupportVolume@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z from KsHelper.obj
+      Discarded $unwind$?ValidatePropertyParams@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@KK@Z from KsHelper.obj
+      Discarded $unwind$?GetSystemPinId@MiniportWaveRT@@AEAAKXZ from MiniportWaveRT.obj
+      Discarded $unwind$?GetAudioEngineSupportedDeviceFormats@MiniportWaveRT@@AEAAKPEAPEAUKSDATAFORMAT_WAVEFORMATEXTENSIBLE@@@Z from MiniportWaveRT.obj
+      Discarded $unwind$?GetAudioModuleListCount@MiniportWaveRT@@AEAAKXZ from MiniportWaveRT.obj
+      Discarded $unwind$?GetChannelVolume@MiniportWaveRTStream@@QEAAJIPEAJ@Z from MiniportWaveRTStreamAudioEngineNode.obj
+      Discarded $unwind$?SetLoopbackProtection@MiniportWaveRTStream@@QEAAJW4CONSTRICTOR_OPTION@@@Z from MiniportWaveRTStreamAudioEngineNode.obj
+      Discarded $unwind$??_V@YAXPEAX@Z from NewDelete.obj
+      Discarded $unwind$??_V@YAXPEAX_K@Z from NewDelete.obj
+      Discarded $unwind$??2@YAPEAX_KW4_POOL_TYPE@@@Z from NewDelete.obj
+      Discarded $unwind$??3@YAXPEAXK@Z from NewDelete.obj
+      Discarded $unwind$?PutInternal@RingBuffer@@AEAAJPEAE_K@Z from RingBuffer.obj
+      Discarded $unwind$??1RingBuffer@@QEAA@XZ from RingBuffer.obj
+      Discarded $unwind$?GetAvailableBytes@RingBuffer@@QEAA_KXZ from RingBuffer.obj
+      Discarded $unwind$??1SubdeviceHelper@@QEAA@XZ from SubdeviceHelper.obj
+      Discarded $unwind$??3@YAXPEAX@Z from stdunk.lib(stdunk.obj)
+      Discarded ExPoolZeroingNativelySupported from AdapterCommon.obj
+      Discarded ExDefaultMdlProtection from WdfDriverEntry.lib(stub.obj)
+      Discarded ExDefaultNonPagedPoolType from WdfDriverEntry.lib(stub.obj)
+      Discarded $pdata$?PropertyHandler_BasicSupportPeakMeter2@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z from KsHelper.obj
+      Discarded $pdata$?PropertyHandler_BasicSupportMute@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z from KsHelper.obj
+      Discarded $pdata$?PropertyHandler_BasicSupportVolume@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z from KsHelper.obj
+      Discarded $pdata$?ValidatePropertyParams@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@KK@Z from KsHelper.obj
+      Discarded $pdata$?GetSystemPinId@MiniportWaveRT@@AEAAKXZ from MiniportWaveRT.obj
+      Discarded $pdata$?GetAudioEngineSupportedDeviceFormats@MiniportWaveRT@@AEAAKPEAPEAUKSDATAFORMAT_WAVEFORMATEXTENSIBLE@@@Z from MiniportWaveRT.obj
+      Discarded $pdata$?GetAudioModuleListCount@MiniportWaveRT@@AEAAKXZ from MiniportWaveRT.obj
+      Discarded $pdata$?GetChannelVolume@MiniportWaveRTStream@@QEAAJIPEAJ@Z from MiniportWaveRTStreamAudioEngineNode.obj
+      Discarded $pdata$?SetLoopbackProtection@MiniportWaveRTStream@@QEAAJW4CONSTRICTOR_OPTION@@@Z from MiniportWaveRTStreamAudioEngineNode.obj
+      Discarded $pdata$??_V@YAXPEAX@Z from NewDelete.obj
+      Discarded $pdata$??_V@YAXPEAX_K@Z from NewDelete.obj
+      Discarded $pdata$??2@YAPEAX_KW4_POOL_TYPE@@@Z from NewDelete.obj
+      Discarded $pdata$??3@YAXPEAXK@Z from NewDelete.obj
+      Discarded $pdata$?PutInternal@RingBuffer@@AEAAJPEAE_K@Z from RingBuffer.obj
+      Discarded $pdata$??1RingBuffer@@QEAA@XZ from RingBuffer.obj
+      Discarded $pdata$?GetAvailableBytes@RingBuffer@@QEAA_KXZ from RingBuffer.obj
+      Discarded $pdata$??1SubdeviceHelper@@QEAA@XZ from SubdeviceHelper.obj
+      Discarded $pdata$??3@YAXPEAX@Z from stdunk.lib(stdunk.obj)
+      Discarded "private: __cdecl KsHelper::KsHelper(void)" (??0KsHelper@@AEAA@XZ) from KsHelper.obj
+      Discarded "private: __cdecl KsHelper::~KsHelper(void)" (??1KsHelper@@AEAA@XZ) from KsHelper.obj
+      Discarded "private: __cdecl MinipairDescriptorFactory::MinipairDescriptorFactory(void)" (??0MinipairDescriptorFactory@@AEAA@XZ) from MinipairDescriptorFactory.obj
+      Discarded "private: __cdecl MinipairDescriptorFactory::~MinipairDescriptorFactory(void)" (??1MinipairDescriptorFactory@@AEAA@XZ) from MinipairDescriptorFactory.obj
+      Discarded "void * __cdecl operator new(unsigned __int64,enum _POOL_TYPE)" (??2@YAPEAX_KW4_POOL_TYPE@@@Z) from NewDelete.obj
+      Discarded "void __cdecl operator delete(void *,unsigned long)" (??3@YAXPEAXK@Z) from NewDelete.obj
+      Discarded "void __cdecl operator delete[](void *)" (??_V@YAXPEAX@Z) from NewDelete.obj
+      Discarded "void __cdecl operator delete[](void *,unsigned __int64)" (??_V@YAXPEAX_K@Z) from NewDelete.obj
+      Discarded "private: __cdecl RegistryHelper::RegistryHelper(void)" (??0RegistryHelper@@AEAA@XZ) from RegistryHelper.obj
+      Discarded "private: __cdecl RegistryHelper::~RegistryHelper(void)" (??1RegistryHelper@@AEAA@XZ) from RegistryHelper.obj
+      Discarded "public: __cdecl RingBuffer::~RingBuffer(void)" (??1RingBuffer@@QEAA@XZ) from RingBuffer.obj
+      Discarded "public: unsigned __int64 __cdecl RingBuffer::GetAvailableBytes(void)" (?GetAvailableBytes@RingBuffer@@QEAA_KXZ) from RingBuffer.obj
+      Discarded "private: long __cdecl RingBuffer::PutInternal(unsigned char *,unsigned __int64)" (?PutInternal@RingBuffer@@AEAAJPEAE_K@Z) from RingBuffer.obj
+      Discarded "public: __cdecl SubdeviceCache::~SubdeviceCache(void)" (??1SubdeviceCache@@QEAA@XZ) from SubdeviceCache.obj
+      Discarded "public: __cdecl SubdeviceHelper::~SubdeviceHelper(void)" (??1SubdeviceHelper@@QEAA@XZ) from SubdeviceHelper.obj
+      Discarded PcGetPhysicalDeviceObject from portcls.lib(portcls.sys)
+      Discarded PcInitializeAdapterDriver from portcls.lib(portcls.sys)
+      Discarded PcDispatchIrp from portcls.lib(portcls.sys)
+      Discarded PcAddAdapterDevice from portcls.lib(portcls.sys)
+      Discarded PcRegisterSubdevice from portcls.lib(portcls.sys)
+      Discarded PcRegisterPhysicalConnection from portcls.lib(portcls.sys)
+      Discarded PcNewPort from portcls.lib(portcls.sys)
+      Discarded PcNewMiniport from portcls.lib(portcls.sys)
+      Discarded "public: __cdecl INonDelegatingUnknown::INonDelegatingUnknown(void)" (??0INonDelegatingUnknown@@QEAA@XZ) from stdunk.lib(stdunk.obj)
+      Discarded "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z) from stdunk.lib(stdunk.obj)
+      Discarded ReadNoFence64 from libcntpr.lib(guard_support.obj)
+      Discarded ReadPointerNoFence from libcntpr.lib(guard_support.obj)
+      Discarded _guard_icall_checks_enforced from libcntpr.lib(guard_support.obj)
+      Discarded _guard_rf_checks_enforced from libcntpr.lib(guard_support.obj)
+      Discarded __report_rangecheckfailure from BufferOverflowFastFailK.lib(gs_report.obj)
+      Discarded __report_securityfailure from BufferOverflowFastFailK.lib(gs_report.obj)
+      Discarded RtlAssert from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExFreePoolWithTag from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded DbgPrintEx from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded KeInitializeEvent from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExAllocatePoolWithTag from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExAcquireFastMutex from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExReleaseFastMutex from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded KeFlushQueuedDpcs from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded KeSetEvent from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded KeInitializeSpinLock from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded KeAcquireSpinLockRaiseToDpc from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded KeReleaseSpinLock from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExAllocateTimer from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExSetTimer from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExCancelTimer from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExDeleteTimer from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded RtlInitUnicodeString from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ZwClose from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ZwCreateKey from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ZwOpenKey from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ZwEnumerateKey from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ZwEnumerateValueKey from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ZwSetValueKey from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded RtlFreeUnicodeString from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded IoRegisterDeviceInterface from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded IoOpenDeviceInterfaceRegistryKey from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded IoSetDeviceInterfacePropertyData from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded ExFreePool from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded KeQueryPerformanceCounter from hal.lib(HAL.dll)
+      Discarded RtlCopyUnicodeString from ntoskrnl.lib(ntoskrnl.exe)
+      Discarded "public: static long __cdecl KsHelper::PropertyHandler_BasicSupportMute(struct _PCPROPERTY_REQUEST *,unsigned long)" (?PropertyHandler_BasicSupportMute@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z) from KsHelper.obj
+      Discarded "public: static long __cdecl KsHelper::PropertyHandler_BasicSupportPeakMeter2(struct _PCPROPERTY_REQUEST *,unsigned long)" (?PropertyHandler_BasicSupportPeakMeter2@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z) from KsHelper.obj
+      Discarded "public: static long __cdecl KsHelper::PropertyHandler_BasicSupportVolume(struct _PCPROPERTY_REQUEST *,unsigned long)" (?PropertyHandler_BasicSupportVolume@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@K@Z) from KsHelper.obj
+      Discarded "public: static long __cdecl KsHelper::ValidatePropertyParams(struct _PCPROPERTY_REQUEST *,unsigned long,unsigned long)" (?ValidatePropertyParams@KsHelper@@SAJPEAU_PCPROPERTY_REQUEST@@KK@Z) from KsHelper.obj
+      Discarded "private: unsigned long __cdecl MiniportWaveRT::GetAudioEngineSupportedDeviceFormats(struct KSDATAFORMAT_WAVEFORMATEXTENSIBLE * *)" (?GetAudioEngineSupportedDeviceFormats@MiniportWaveRT@@AEAAKPEAPEAUKSDATAFORMAT_WAVEFORMATEXTENSIBLE@@@Z) from MiniportWaveRT.obj
+      Discarded "private: unsigned long __cdecl MiniportWaveRT::GetAudioModuleDescriptorListCount(void)" (?GetAudioModuleDescriptorListCount@MiniportWaveRT@@AEAAKXZ) from MiniportWaveRT.obj
+      Discarded "private: unsigned long __cdecl MiniportWaveRT::GetAudioModuleListCount(void)" (?GetAudioModuleListCount@MiniportWaveRT@@AEAAKXZ) from MiniportWaveRT.obj
+      Discarded "private: struct _GUID const * __cdecl MiniportWaveRT::GetAudioModuleNotificationDeviceId(void)" (?GetAudioModuleNotificationDeviceId@MiniportWaveRT@@AEAAPEBU_GUID@@XZ) from MiniportWaveRT.obj
+      Discarded "private: class MiniportWaveRTStream * __cdecl MiniportWaveRT::GetStream(void)" (?GetStream@MiniportWaveRT@@AEAAPEAVMiniportWaveRTStream@@XZ) from MiniportWaveRT.obj
+      Discarded "private: unsigned long __cdecl MiniportWaveRT::GetSystemPinId(void)" (?GetSystemPinId@MiniportWaveRT@@AEAAKXZ) from MiniportWaveRT.obj
+      Discarded "public: long __cdecl MiniportWaveRTStream::GetChannelVolume(unsigned int,long *)" (?GetChannelVolume@MiniportWaveRTStream@@QEAAJIPEAJ@Z) from MiniportWaveRTStreamAudioEngineNode.obj
+      Discarded "public: long __cdecl MiniportWaveRTStream::SetLoopbackProtection(enum CONSTRICTOR_OPTION)" (?SetLoopbackProtection@MiniportWaveRTStream@@QEAAJW4CONSTRICTOR_OPTION@@@Z) from MiniportWaveRTStreamAudioEngineNode.obj
+      Discarded " ?? ?? ::NNGAKEGL::`string'" (??_C@_0BA@JNNKNEEL@MaxChannels?5?$DO?50@NNGAKEGL@) from KsHelper.obj
+      Discarded " ?? ?? ::NNGAKEGL::`string'" (??_C@_0BB@MFBFHHGJ@IsRenderDevice?$CI?$CJ@NNGAKEGL@) from MiniportWaveRT.obj
+      Discarded " ?? ?? ::NNGAKEGL::`string'" (??_C@_0CB@GINHJDGB@m_DeviceFormatsAndModesCount?5?$DO?5@NNGAKEGL@) from MiniportWaveRT.obj
+      Discarded " ?? ?? ::NNGAKEGL::`string'" (??_C@_0DE@BIPBDOKL@pDeviceFormatsAndModes?$FLi?$FN?4PinTy@NNGAKEGL@) from MiniportWaveRT.obj
+      Discarded " ?? ?? ::NNGAKEGL::`string'" (??_C@_0CO@FNMEOCLD@pDeviceFormatsAndModes?$FLi?$FN?4WaveF@NNGAKEGL@) from MiniportWaveRT.obj
+      Discarded " ?? ?? ::NNGAKEGL::`string'" (??_C@_0CP@FLJHLBJK@pDeviceFormatsAndModes?$FLi?$FN?4WaveF@NNGAKEGL@) from MiniportWaveRT.obj
+      Discarded " ?? ?? ::NNGAKEGL::`string'" (??_C@_08PJEMJIBH@_pVolume@NNGAKEGL@) from MiniportWaveRTStreamAudioEngineNode.obj
+  
+      Selected symbol:
+          "public: virtual struct _DEVICE_OBJECT * __cdecl AdapterCommon::GetDeviceObject(void)" (?GetDeviceObject@AdapterCommon@@UEAAPEAU_DEVICE_OBJECT@@XZ) from AdapterCommon.obj
+      Replaced symbol(s):
+          "public: unsigned __int64 __cdecl RingBuffer::GetSize(void)" (?GetSize@RingBuffer@@QEAA_KXZ) from RingBuffer.obj
+  
+      Selected symbol:
+          "long __cdecl RtlStringValidateDestW(unsigned short const *,unsigned __int64,unsigned __int64)" (?RtlStringValidateDestW@@YAJPEBG_K_K@Z) from RegistryHelper.obj
+      Replaced symbol(s):
+          "long __cdecl RtlStringValidateDestW(unsigned short const *,unsigned __int64,unsigned __int64)" (?RtlStringValidateDestW@@YAJPEBG_K_K@Z) from SubdeviceCache.obj
+  
+      Selected symbol:
+          "long __cdecl RtlStringCopyWorkerW(unsigned short *,unsigned __int64,unsigned __int64 *,unsigned short const *,unsigned __int64)" (?RtlStringCopyWorkerW@@YAJPEAG_KPEA_KPEBG1@Z) from RegistryHelper.obj
+      Replaced symbol(s):
+          "long __cdecl RtlStringCopyWorkerW(unsigned short *,unsigned __int64,unsigned __int64 *,unsigned short const *,unsigned __int64)" (?RtlStringCopyWorkerW@@YAJPEAG_KPEA_KPEBG1@Z) from SubdeviceCache.obj
+  
+      Selected symbol:
+          "public: __cdecl IAdapterCommon::IAdapterCommon(void)" (??0IAdapterCommon@@QEAA@XZ) from AdapterCommon.obj
+      Replaced symbol(s):
+          "public: __cdecl IMiniport::IMiniport(void)" (??0IMiniport@@QEAA@XZ) from MiniportTopology.obj
+          "public: __cdecl IMiniportStreamAudioEngineNode2::IMiniportStreamAudioEngineNode2(void)" (??0IMiniportStreamAudioEngineNode2@@QEAA@XZ) from MiniportWaveRT.obj
+          "public: __cdecl IMiniportStreamAudioEngineNode::IMiniportStreamAudioEngineNode(void)" (??0IMiniportStreamAudioEngineNode@@QEAA@XZ) from MiniportWaveRT.obj
+          "public: __cdecl IMiniportWaveRTInputStream::IMiniportWaveRTInputStream(void)" (??0IMiniportWaveRTInputStream@@QEAA@XZ) from MiniportWaveRT.obj
+          "public: __cdecl IMiniportWaveRTOutputStream::IMiniportWaveRTOutputStream(void)" (??0IMiniportWaveRTOutputStream@@QEAA@XZ) from MiniportWaveRT.obj
+          "public: __cdecl IMiniportWaveRTStream::IMiniportWaveRTStream(void)" (??0IMiniportWaveRTStream@@QEAA@XZ) from MiniportWaveRT.obj
+  
+      Selected symbol:
+          "public: __cdecl IMiniportTopology::IMiniportTopology(void)" (??0IMiniportTopology@@QEAA@XZ) from MiniportTopology.obj
+      Replaced symbol(s):
+          "public: __cdecl IMiniportWaveRT::IMiniportWaveRT(void)" (??0IMiniportWaveRT@@QEAA@XZ) from MiniportWaveRT.obj
+          "public: __cdecl IMiniportWaveRTStreamNotification::IMiniportWaveRTStreamNotification(void)" (??0IMiniportWaveRTStreamNotification@@QEAA@XZ) from MiniportWaveRT.obj
+  
+      Selected symbol:
+          "public: virtual unsigned long __cdecl AdapterCommon::Release(void)" (?Release@AdapterCommon@@UEAAKXZ) from AdapterCommon.obj
+      Replaced symbol(s):
+          "public: virtual unsigned long __cdecl MiniportTopology::Release(void)" (?Release@MiniportTopology@@UEAAKXZ) from MiniportTopology.obj
+          "public: virtual unsigned long __cdecl MiniportWaveRT::Release(void)" (?Release@MiniportWaveRT@@UEAAKXZ) from MiniportWaveRT.obj
+  
+      Selected symbol:
+          "public: virtual unsigned long __cdecl AdapterCommon::AddRef(void)" (?AddRef@AdapterCommon@@UEAAKXZ) from AdapterCommon.obj
+      Replaced symbol(s):
+          "public: virtual unsigned long __cdecl MiniportTopology::AddRef(void)" (?AddRef@MiniportTopology@@UEAAKXZ) from MiniportTopology.obj
+          "public: virtual unsigned long __cdecl MiniportWaveRT::AddRef(void)" (?AddRef@MiniportWaveRT@@UEAAKXZ) from MiniportWaveRT.obj
+  
+      Selected symbol:
+          "public: virtual long __cdecl AdapterCommon::QueryInterface(struct _GUID const &,void * *)" (?QueryInterface@AdapterCommon@@UEAAJAEBU_GUID@@PEAPEAX@Z) from AdapterCommon.obj
+      Replaced symbol(s):
+          "public: virtual long __cdecl MiniportTopology::QueryInterface(struct _GUID const &,void * *)" (?QueryInterface@MiniportTopology@@UEAAJAEBU_GUID@@PEAPEAX@Z) from MiniportTopology.obj
+          "public: virtual long __cdecl MiniportWaveRT::QueryInterface(struct _GUID const &,void * *)" (?QueryInterface@MiniportWaveRT@@UEAAJAEBU_GUID@@PEAPEAX@Z) from MiniportWaveRT.obj
+  
+      Selected symbol:
+          "public: virtual long __cdecl MiniportWaveRTStream::GetClockRegister(struct KSRTAUDIO_HWREGISTER *)" (?GetClockRegister@MiniportWaveRTStream@@UEAAJPEAUKSRTAUDIO_HWREGISTER@@@Z) from MiniportWaveRTStream.obj
+      Replaced symbol(s):
+          "public: virtual long __cdecl MiniportWaveRTStream::GetPositionRegister(struct KSRTAUDIO_HWREGISTER *)" (?GetPositionRegister@MiniportWaveRTStream@@UEAAJPEAUKSRTAUDIO_HWREGISTER@@@Z) from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          "public: virtual void __cdecl MiniportWaveRTStream::FreeAudioBuffer(struct _MDL *,unsigned long)" (?FreeAudioBuffer@MiniportWaveRTStream@@UEAAXPEAU_MDL@@K@Z) from MiniportWaveRTStream.obj
+      Replaced symbol(s):
+          "public: virtual void __cdecl MiniportWaveRTStream::FreeBufferWithNotification(struct _MDL *,unsigned long)" (?FreeBufferWithNotification@MiniportWaveRTStream@@UEAAXPEAU_MDL@@K@Z) from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $unwind$?Init@AdapterCommon@@UEAAJPEAU_IRP@@PEAU_DEVICE_OBJECT@@@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$?FreeAudioBuffer@MiniportWaveRTStream@@UEAAXPEAU_MDL@@K@Z from MiniportWaveRTStream.obj
+          $unwind$?FreeBufferWithNotification@MiniportWaveRTStream@@UEAAXPEAU_MDL@@K@Z from MiniportWaveRTStream.obj
+          $unwind$?RtlStringCchCopyW@@YAJPEAG_KPEBG@Z from SubdeviceCache.obj
+  
+      Selected symbol:
+          $unwind$?Init@MiniportWaveRT@@UEAAJPEAUIUnknown@@PEAUIResourceList@@PEAUIPortWaveRT@@@Z from MiniportWaveRT.obj
+      Replaced symbol(s):
+          $unwind$?CreateAudioInterfaceWithProperties@SubdeviceHelper@@AEAAJPEBG0KPEBU_SYSVAD_DEVPROPERTY@@PEAU_DEVICE_OBJECT@@PEAU_UNICODE_STRING@@@Z from SubdeviceHelper.obj
+  
+      Selected symbol:
+          $unwind$?WriteEtwEvent@AdapterCommon@@UEAAJW4EPcMiniportEngineEvent@@_K111@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$?IsFormatSupported@MiniportWaveRT@@AEAAJKEPEATKSDATAFORMAT@@@Z from MiniportWaveRT.obj
+          $unwind$?AllocateAudioBuffer@MiniportWaveRTStream@@UEAAJKPEAPEAU_MDL@@PEAK1PEAW4_MEMORY_CACHING_TYPE@@@Z from MiniportWaveRTStream.obj
+          $unwind$?SetWritePacket@MiniportWaveRTStream@@UEAAJKKK@Z from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $unwind$?ValidateStreamCreate@MiniportWaveRT@@AEAAJKE@Z from MiniportWaveRT.obj
+      Replaced symbol(s):
+          $unwind$?GetStreamChannelCount@MiniportWaveRTStream@@UEAAJW4eChannelTargetType@@PEAI@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetStreamChannelVolume@MiniportWaveRTStream@@UEAAJIPEAJ@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetStreamChannelMute@MiniportWaveRTStream@@UEAAJIPEAH@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?SetStreamChannelMute@MiniportWaveRTStream@@UEAAJIH@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetStreamChannelPeakMeter@MiniportWaveRTStream@@UEAAJIPEAJ@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?SetChannelVolume@MiniportWaveRTStream@@QEAAJIJ@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetChannelPeakMeter@MiniportWaveRTStream@@QEAAJIPEAJ@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetChannelMute@MiniportWaveRTStream@@QEAAJIPEAH@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?SetChannelMute@MiniportWaveRTStream@@QEAAJIH@Z from MiniportWaveRTStreamAudioEngineNode.obj
+  
+      Selected symbol:
+          $unwind$?NonDelegatingQueryInterface@CUnknown@@UEAAJAEBU_GUID@@PEAPEAX@Z from stdunk.lib(stdunk.obj)
+      Replaced symbol(s):
+          $unwind$?NonDelegatingRelease@CUnknown@@UEAAKXZ from stdunk.lib(stdunk.obj)
+          $unwind$__GSHandlerCheckCommon from libcntpr.lib(gshandler.obj)
+          $unwind$__GSHandlerCheck from libcntpr.lib(gshandler.obj)
+          $unwind$FxStubDriverMiniportUnload from WdfDriverEntry.lib(stub.obj)
+          $unwind$FxStubDriverUnload from WdfDriverEntry.lib(stub.obj)
+          $unwind$?FxStubDriverUnloadCommon@@YAXXZ from WdfDriverEntry.lib(stub.obj)
+  
+      Selected symbol:
+          $unwind$?DataRangeIntersection@MiniportTopology@@UEAAJKPEATKSDATAFORMAT@@0KPEAXPEAK@Z from MiniportTopology.obj
+      Replaced symbol(s):
+          $unwind$?DataRangeIntersection@MiniportWaveRT@@UEAAJKPEATKSDATAFORMAT@@0KPEAXPEAK@Z from MiniportWaveRT.obj
+          $unwind$?GetStreamAttributeSteppings@MiniportWaveRTStream@@UEAAJW4eChannelTargetType@@PEAUKSPROPERTY_STEPPING_LONG@@I@Z from MiniportWaveRTStreamAudioEngineNode.obj
+  
+      Selected symbol:
+          $unwind$??_GAdapterCommon@@UEAAPEAXI@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$??_GMiniportTopology@@UEAAPEAXI@Z from MiniportTopology.obj
+          $unwind$??_GMiniportWaveRTStream@@UEAAPEAXI@Z from MiniportWaveRT.obj
+          $unwind$??_GMiniportWaveRT@@UEAAPEAXI@Z from MiniportWaveRT.obj
+  
+      Selected symbol:
+          $unwind$??0IAdapterCommon@@QEAA@XZ from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$??0IMiniport@@QEAA@XZ from MiniportTopology.obj
+          $unwind$??0IMiniportTopology@@QEAA@XZ from MiniportTopology.obj
+          $unwind$ExInitializeFastMutex from MiniportWaveRT.obj
+          $unwind$??0IMiniportWaveRTStream@@QEAA@XZ from MiniportWaveRT.obj
+          $unwind$??0IMiniportWaveRTStreamNotification@@QEAA@XZ from MiniportWaveRT.obj
+          $unwind$??0IMiniportWaveRTInputStream@@QEAA@XZ from MiniportWaveRT.obj
+          $unwind$??0IMiniportWaveRTOutputStream@@QEAA@XZ from MiniportWaveRT.obj
+          $unwind$??0IMiniportWaveRT@@QEAA@XZ from MiniportWaveRT.obj
+          $unwind$??0IMiniportStreamAudioEngineNode@@QEAA@XZ from MiniportWaveRT.obj
+          $unwind$??0IMiniportStreamAudioEngineNode2@@QEAA@XZ from MiniportWaveRT.obj
+          $unwind$RtlpCheckListEntry from MiniportWaveRTStream.obj
+          $unwind$??0SubdeviceCache@@QEAA@XZ from SubdeviceCache.obj
+          $unwind$?Clean@SubdeviceHelper@@QEAAXXZ from SubdeviceHelper.obj
+  
+      Selected symbol:
+          $unwind$?InstallVirtualCable@AdapterCommon@@AEAAJPEAU_IRP@@@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$DriverEntry from Driver.obj
+  
+      Selected symbol:
+          $unwind$?GetPinSupportedDeviceFormats@MiniportWaveRT@@AEAAKKPEAPEAUKSDATAFORMAT_WAVEFORMATEXTENSIBLE@@@Z from MiniportWaveRT.obj
+      Replaced symbol(s):
+          $unwind$?GetPinSupportedDeviceModes@MiniportWaveRT@@AEAAKKPEAPEAU_MODE_AND_DEFAULT_FORMAT@@@Z from MiniportWaveRT.obj
+          $unwind$?StreamClosed@MiniportWaveRT@@QEAAJKPEAVMiniportWaveRTStream@@@Z from MiniportWaveRT.obj
+          $unwind$?StreamCreated@MiniportWaveRT@@QEAAJKPEAVMiniportWaveRTStream@@@Z from MiniportWaveRT.obj
+  
+      Selected symbol:
+          $unwind$?AddRef@AdapterCommon@@UEAAKXZ from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$?Release@AdapterCommon@@UEAAKXZ from AdapterCommon.obj
+          $unwind$??1AdapterCommon@@UEAA@XZ from AdapterCommon.obj
+          $unwind$?Cleanup@AdapterCommon@@UEAAXXZ from AdapterCommon.obj
+          $unwind$WdfDriverMiniportUnload from Driver.obj
+          $unwind$DriverUnload from Driver.obj
+          $unwind$?AddRef@MiniportTopology@@UEAAKXZ from MiniportTopology.obj
+          $unwind$?Release@MiniportTopology@@UEAAKXZ from MiniportTopology.obj
+          $unwind$??1MiniportTopology@@UEAA@XZ from MiniportTopology.obj
+          $unwind$?AddRef@MiniportWaveRTStream@@UEAAKXZ from MiniportWaveRT.obj
+          $unwind$?Release@MiniportWaveRTStream@@UEAAKXZ from MiniportWaveRT.obj
+          $unwind$?AddRef@MiniportWaveRT@@UEAAKXZ from MiniportWaveRT.obj
+          $unwind$?Release@MiniportWaveRT@@UEAAKXZ from MiniportWaveRT.obj
+          $unwind$??1MiniportWaveRT@@UEAA@XZ from MiniportWaveRT.obj
+          $unwind$??1MiniportWaveRTStream@@UEAA@XZ from MiniportWaveRTStream.obj
+          $unwind$RemoveHeadList from SubdeviceCache.obj
+  
+      Selected symbol:
+          $unwind$?InstallVirtualMic@AdapterCommon@@AEAAJPEAU_IRP@@PEAPEAUIUnknown@@@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$?InstallVirtualSpeaker@AdapterCommon@@AEAAJPEAU_IRP@@PEAPEAUIUnknown@@@Z from AdapterCommon.obj
+          $unwind$?NonDelegatingQueryInterface@MiniportWaveRTStream@@UEAAJAEBU_GUID@@PEAPEAX@Z from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $unwind$?GetPinTypeForPinNum@MiniportWaveRT@@AEAA?AW4PinType@@K@Z from MiniportWaveRT.obj
+      Replaced symbol(s):
+          $unwind$?IsSystemRenderPin@MiniportWaveRT@@QEAAHK@Z from MiniportWaveRT.obj
+          $unwind$?IsSystemCapturePin@MiniportWaveRT@@QEAAHK@Z from MiniportWaveRT.obj
+          $unwind$?IsBridgePin@MiniportWaveRT@@QEAAHK@Z from MiniportWaveRT.obj
+          $unwind$?SetLfxState@MiniportWaveRTStream@@UEAAJH@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?SetStreamCurrentWritePosition@MiniportWaveRTStream@@UEAAJK@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?SetStreamLoopbackProtection@MiniportWaveRTStream@@UEAAJW4CONSTRICTOR_OPTION@@@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?SetStreamCurrentWritePositionForLastBuffer@MiniportWaveRTStream@@UEAAJK@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?SetCurrentWritePosition@MiniportWaveRTStream@@QEAAJK@Z from MiniportWaveRTStreamAudioEngineNode.obj
+  
+      Selected symbol:
+          $unwind$?RtlStringCopyWorkerW@@YAJPEAG_KPEA_KPEBG1@Z from RegistryHelper.obj
+      Replaced symbol(s):
+          $unwind$?RtlStringCopyWorkerW@@YAJPEAG_KPEA_KPEBG1@Z from SubdeviceCache.obj
+  
+      Selected symbol:
+          $unwind$IoGetCurrentIrpStackLocation from Driver.obj
+      Replaced symbol(s):
+          $unwind$?IsRenderDevice@MiniportWaveRT@@AEAAHXZ from MiniportWaveRT.obj
+          $unwind$IsListEmpty from MiniportWaveRTStream.obj
+          $unwind$?IsCurrentWaveRTWritePositionUpdated@MiniportWaveRTStream@@QEAAHXZ from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $unwind$?Create@AdapterCommon@@SAJPEAPEAUIUnknown@@AEBU_GUID@@PEAU2@W4_POOL_TYPE@@PEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$?Create@MiniportTopology@@SAJPEAPEAUIUnknown@@AEBU_GUID@@PEAU2@W4_POOL_TYPE@@2PEAXPEAU_ENDPOINT_MINIPAIR@@@Z from MiniportTopology.obj
+          $unwind$?MigrateDeviceInterfaceTemplateParameters@SubdeviceHelper@@AEAAJPEAU_UNICODE_STRING@@PEAU_DEVICE_OBJECT@@PEBG@Z from SubdeviceHelper.obj
+          $unwind$?SysvadIoSetDeviceInterfacePropertyDataMultiple@SubdeviceHelper@@AEAAJPEAU_UNICODE_STRING@@KPEBU_SYSVAD_DEVPROPERTY@@@Z from SubdeviceHelper.obj
+  
+      Selected symbol:
+          $unwind$?GetPresentationPosition@MiniportWaveRTStream@@QEAAJPEAUKSAUDIO_PRESENTATION_POSITION@@@Z from MiniportWaveRTStreamAudioEngineNode.obj
+      Replaced symbol(s):
+          $unwind$?CopyRegistryValues@RegistryHelper@@SAJPEAX0@Z from RegistryHelper.obj
+  
+      Selected symbol:
+          $unwind$?NonDelegatingQueryInterface@AdapterCommon@@UEAAJAEBU_GUID@@PEAPEAX@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$?QueryInterface@AdapterCommon@@UEAAJAEBU_GUID@@PEAPEAX@Z from AdapterCommon.obj
+          $unwind$?NonDelegatingQueryInterface@MiniportTopology@@UEAAJAEBU_GUID@@PEAPEAX@Z from MiniportTopology.obj
+          $unwind$?QueryInterface@MiniportTopology@@UEAAJAEBU_GUID@@PEAPEAX@Z from MiniportTopology.obj
+          $unwind$?QueryInterface@MiniportWaveRTStream@@UEAAJAEBU_GUID@@PEAPEAX@Z from MiniportWaveRT.obj
+          $unwind$?NonDelegatingQueryInterface@MiniportWaveRT@@UEAAJAEBU_GUID@@PEAPEAX@Z from MiniportWaveRT.obj
+          $unwind$?QueryInterface@MiniportWaveRT@@UEAAJAEBU_GUID@@PEAPEAX@Z from MiniportWaveRT.obj
+          $unwind$?GetVolumeSteppings@MiniportWaveRTStream@@QEAAJPEAUKSPROPERTY_STEPPING_LONG@@I@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetPeakMeterSteppings@MiniportWaveRTStream@@QEAAJPEAUKSPROPERTY_STEPPING_LONG@@I@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetMuteSteppings@MiniportWaveRTStream@@QEAAJPEAUKSPROPERTY_STEPPING_LONG@@I@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?Init@RingBuffer@@QEAAJ_K0@Z from RingBuffer.obj
+  
+      Selected symbol:
+          $unwind$?RtlStringValidateDestW@@YAJPEBG_K_K@Z from RegistryHelper.obj
+      Replaced symbol(s):
+          $unwind$?RtlStringValidateDestW@@YAJPEBG_K_K@Z from SubdeviceCache.obj
+  
+      Selected symbol:
+          $unwind$?Init@MiniportTopology@@UEAAJPEAUIUnknown@@PEAUIResourceList@@PEAUIPortTopology@@@Z from MiniportTopology.obj
+      Replaced symbol(s):
+          $unwind$?WriteAudioPacket@MiniportWaveRTStream@@AEAAJPEAEKH@Z from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $unwind$WdfDriverCreate from Driver.obj
+      Replaced symbol(s):
+          $unwind$?Create@MiniportWaveRT@@SAJPEAPEAUIUnknown@@AEBU_GUID@@PEAU2@W4_POOL_TYPE@@2PEAXPEAU_ENDPOINT_MINIPAIR@@@Z from MiniportWaveRT.obj
+          $unwind$?RtlStringCbCopyNW@@YAJPEAG_KPEBG1@Z from RegistryHelper.obj
+          $unwind$?Get@SubdeviceCache@@QEAAJPEAGPEAPEAUIUnknown@@1@Z from SubdeviceCache.obj
+  
+      Selected symbol:
+          $unwind$?IsEqualGUID@@YAHAEBU_GUID@@0@Z from KsHelper.obj
+      Replaced symbol(s):
+          $unwind$??8@YA_NAEBU_GUID@@0@Z from KsHelper.obj
+          $unwind$?GetDescription@MiniportTopology@@UEAAJPEAPEAUPCFILTER_DESCRIPTOR@@@Z from MiniportTopology.obj
+          $unwind$?GetDescription@MiniportWaveRT@@UEAAJPEAPEAUPCFILTER_DESCRIPTOR@@@Z from MiniportWaveRT.obj
+          $unwind$InsertTailList from MiniportWaveRTStream.obj
+          $unwind$?SetFormat@MiniportWaveRTStream@@UEAAJPEATKSDATAFORMAT@@@Z from MiniportWaveRTStream.obj
+          $unwind$?GetHWLatency@MiniportWaveRTStream@@UEAAXPEAUKSRTAUDIO_HWLATENCY@@@Z from MiniportWaveRTStream.obj
+          $unwind$?GetPositionRegister@MiniportWaveRTStream@@UEAAJPEAUKSRTAUDIO_HWREGISTER@@@Z from MiniportWaveRTStream.obj
+          $unwind$?GetClockRegister@MiniportWaveRTStream@@UEAAJPEAUKSRTAUDIO_HWREGISTER@@@Z from MiniportWaveRTStream.obj
+          $unwind$?GetOutputStreamPresentationPosition@MiniportWaveRTStream@@UEAAJPEAUKSAUDIO_PRESENTATION_POSITION@@@Z from MiniportWaveRTStream.obj
+          $unwind$?SetPairedStream@MiniportWaveRTStream@@QEAAXPEAV1@@Z from MiniportWaveRTStream.obj
+          $unwind$?GetLfxState@MiniportWaveRTStream@@UEAAJPEAH@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetStreamPresentationPosition@MiniportWaveRTStream@@UEAAJPEAUKSAUDIO_PRESENTATION_POSITION@@@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetStreamLinearBufferPosition@MiniportWaveRTStream@@UEAAJPEA_K@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetVolumeChannelCount@MiniportWaveRTStream@@QEAAJPEAI@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetPeakMeterChannelCount@MiniportWaveRTStream@@QEAAJPEAI@Z from MiniportWaveRTStreamAudioEngineNode.obj
+          $unwind$?GetMuteChannelCount@MiniportWaveRTStream@@QEAAJPEAI@Z from MiniportWaveRTStreamAudioEngineNode.obj
+  
+      Selected symbol:
+          $unwind$?GetWaveFormatEx@KsHelper@@SAPEAUtWAVEFORMATEX@@PEATKSDATAFORMAT@@@Z from KsHelper.obj
+      Replaced symbol(s):
+          $unwind$RemoveEntryList from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $unwind$?SetEtwHelper@AdapterCommon@@UEAAXPEAUIPortClsEtwHelper@@@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$?AddDevice@@YAJPEAU_DRIVER_OBJECT@@PEAU_DEVICE_OBJECT@@@Z from Driver.obj
+          $unwind$?PropertyHandlerProposedFormat@MiniportWaveRT@@AEAAJPEAU_PCPROPERTY_REQUEST@@@Z from MiniportWaveRT.obj
+          $unwind$?GetPosition@MiniportWaveRTStream@@UEAAJPEAUKSAUDIO_POSITION@@@Z from MiniportWaveRTStream.obj
+          $unwind$?RegisterNotificationEvent@MiniportWaveRTStream@@UEAAJPEAU_KEVENT@@@Z from MiniportWaveRTStream.obj
+          $unwind$?UnregisterNotificationEvent@MiniportWaveRTStream@@UEAAJPEAU_KEVENT@@@Z from MiniportWaveRTStream.obj
+          $unwind$?GetPacketCount@MiniportWaveRTStream@@UEAAJPEAK@Z from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $unwind$??0AdapterCommon@@QEAA@PEAUIUnknown@@@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $unwind$??0MiniportWaveRTStream@@QEAA@PEAUIUnknown@@@Z from MiniportWaveRT.obj
+          $unwind$?SetPairedMiniport@MiniportWaveRT@@QEAAXPEAV1@@Z from MiniportWaveRT.obj
+          $unwind$??3@YAXPEAX_K@Z from NewDelete.obj
+          $unwind$??0SubdeviceHelper@@QEAA@PEAUIAdapterCommon@@@Z from SubdeviceHelper.obj
+  
+      Selected symbol:
+          $unwind$?CreateSpeaker@MinipairDescriptorFactory@@SAJPEAPEAU_ENDPOINT_MINIPAIR@@@Z from MinipairDescriptorFactory.obj
+      Replaced symbol(s):
+          $unwind$?CreateMicrophone@MinipairDescriptorFactory@@SAJPEAPEAU_ENDPOINT_MINIPAIR@@@Z from MinipairDescriptorFactory.obj
+  
+      Selected symbol:
+          $unwind$?GetAttributesFromAttributeList@KsHelper@@SAJPEBUKSMULTIPLE_ITEM@@_KPEAU_GUID@@@Z from KsHelper.obj
+      Replaced symbol(s):
+          $unwind$?Put@RingBuffer@@QEAAJPEAE_K@Z from RingBuffer.obj
+  
+      Selected symbol:
+          $unwind$?Init@MiniportWaveRTStream@@QEAAJPEAVMiniportWaveRT@@PEAUIPortWaveRTStream@@KEPEATKSDATAFORMAT@@U_GUID@@@Z from MiniportWaveRTStream.obj
+      Replaced symbol(s):
+          $unwind$?Take@RingBuffer@@QEAAJPEAE_KPEA_K@Z from RingBuffer.obj
+  
+      Selected symbol:
+          $pdata$?AddRef@AdapterCommon@@UEAAKXZ from AdapterCommon.obj
+      Replaced symbol(s):
+          $pdata$?AddRef@MiniportTopology@@UEAAKXZ from MiniportTopology.obj
+          $pdata$?AddRef@MiniportWaveRT@@UEAAKXZ from MiniportWaveRT.obj
+  
+      Selected symbol:
+          $pdata$??0IMiniportTopology@@QEAA@XZ from MiniportTopology.obj
+      Replaced symbol(s):
+          $pdata$??0IMiniportWaveRTStreamNotification@@QEAA@XZ from MiniportWaveRT.obj
+          $pdata$??0IMiniportWaveRT@@QEAA@XZ from MiniportWaveRT.obj
+  
+      Selected symbol:
+          $pdata$?QueryInterface@AdapterCommon@@UEAAJAEBU_GUID@@PEAPEAX@Z from AdapterCommon.obj
+      Replaced symbol(s):
+          $pdata$?QueryInterface@MiniportTopology@@UEAAJAEBU_GUID@@PEAPEAX@Z from MiniportTopology.obj
+          $pdata$?QueryInterface@MiniportWaveRT@@UEAAJAEBU_GUID@@PEAPEAX@Z from MiniportWaveRT.obj
+  
+      Selected symbol:
+          $pdata$?FreeAudioBuffer@MiniportWaveRTStream@@UEAAXPEAU_MDL@@K@Z from MiniportWaveRTStream.obj
+      Replaced symbol(s):
+          $pdata$?FreeBufferWithNotification@MiniportWaveRTStream@@UEAAXPEAU_MDL@@K@Z from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $pdata$?RtlStringCopyWorkerW@@YAJPEAG_KPEA_KPEBG1@Z from RegistryHelper.obj
+      Replaced symbol(s):
+          $pdata$?RtlStringCopyWorkerW@@YAJPEAG_KPEA_KPEBG1@Z from SubdeviceCache.obj
+  
+      Selected symbol:
+          $pdata$??0IAdapterCommon@@QEAA@XZ from AdapterCommon.obj
+      Replaced symbol(s):
+          $pdata$??0IMiniport@@QEAA@XZ from MiniportTopology.obj
+          $pdata$??0IMiniportWaveRTStream@@QEAA@XZ from MiniportWaveRT.obj
+          $pdata$??0IMiniportWaveRTInputStream@@QEAA@XZ from MiniportWaveRT.obj
+          $pdata$??0IMiniportWaveRTOutputStream@@QEAA@XZ from MiniportWaveRT.obj
+          $pdata$??0IMiniportStreamAudioEngineNode@@QEAA@XZ from MiniportWaveRT.obj
+          $pdata$??0IMiniportStreamAudioEngineNode2@@QEAA@XZ from MiniportWaveRT.obj
+  
+      Selected symbol:
+          $pdata$?GetPositionRegister@MiniportWaveRTStream@@UEAAJPEAUKSRTAUDIO_HWREGISTER@@@Z from MiniportWaveRTStream.obj
+      Replaced symbol(s):
+          $pdata$?GetClockRegister@MiniportWaveRTStream@@UEAAJPEAUKSRTAUDIO_HWREGISTER@@@Z from MiniportWaveRTStream.obj
+  
+      Selected symbol:
+          $pdata$?Release@AdapterCommon@@UEAAKXZ from AdapterCommon.obj
+      Replaced symbol(s):
+          $pdata$?Release@MiniportTopology@@UEAAKXZ from MiniportTopology.obj
+          $pdata$?Release@MiniportWaveRT@@UEAAKXZ from MiniportWaveRT.obj
+  
+      Selected symbol:
+          $pdata$?RtlStringValidateDestW@@YAJPEBG_K_K@Z from RegistryHelper.obj
+      Replaced symbol(s):
+          $pdata$?RtlStringValidateDestW@@YAJPEBG_K_K@Z from SubdeviceCache.obj
+  
+      ICF total savings: 2977 bytes
+  
+  Starting pass 2
+       SubdeviceHelper.obj
+       SubdeviceCache.obj
+       RingBuffer.obj
+       RegistryHelper.obj
+       NewDelete.obj
+       MiniportWaveRTStreamAudioEngineNode.obj
+       MiniportWaveRTStream.obj
+       MiniportWaveRT.obj
+       MiniportTopology.obj
+       MinipairDescriptorFactory.obj
+       KsHelper.obj
+       Driver.obj
+       AdapterCommon.obj
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       portcls.lib(portcls.sys)
+       stdunk.lib(stdunk.obj)
+       libcntpr.lib(guard_dispatch.obj)
+       libcntpr.lib(gshandler.obj)
+       libcntpr.lib(guard_support.obj)
+       libcntpr.lib(loadcfg.obj)
+       libcntpr.lib(memcmp.obj)
+       BufferOverflowFastFailK.lib(gs_report.obj)
+       BufferOverflowFastFailK.lib(gs_support.obj)
+       BufferOverflowFastFailK.lib(amdsecgs.obj)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       ntoskrnl.lib(ntoskrnl.exe)
+       hal.lib(HAL.dll)
+       hal.lib(HAL.dll)
+       hal.lib(HAL.dll)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfDriverEntry.lib(stub.obj)
+       WdfDriverEntry.lib(classbind.obj)
+       WdfDriverEntry.lib(inittypes.obj)
+  Finished pass 2
+  AudioMirror.vcxproj -> C:\Users\Elad\Desktop\AudioMirror\x64\Debug\AudioMirror.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Elad\Desktop\AudioMirror\x64\Debug\AudioMirror.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\Elad\Desktop\AudioMirror\x64\Debug\AudioMirror\audiomirror.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Elad\Desktop\AudioMirror\x64\Debug\AudioMirror\audiomirror.cat
+  
+
+Project Performance Summary:
+    19467 ms  C:\Users\Elad\Desktop\AudioMirror\AudioMirror\AudioMirror.vcxproj   3 calls
+              17492 ms  Build                                      1 calls
+               1976 ms  TestSign                                   2 calls
+
+Target Performance Summary:
+        0 ms  Build                                      1 calls
+        0 ms  BeforeClCompile                            1 calls
+        0 ms  _ALink                                     1 calls
+        0 ms  AddWppClDefinitions                        1 calls
+        0 ms  BuildCompileTraverse                       1 calls
+        0 ms  BuildGenerateSources                       1 calls
+        0 ms  _BuildGenerateSourcesAction                1 calls
+        0 ms  ComputeCLInputPDBName                      1 calls
+        0 ms  AfterBuildGenerateSourcesEvent             1 calls
+        0 ms  _Midl                                      1 calls
+        0 ms  AfterMidl                                  1 calls
+        0 ms  ComputeMIDLGeneratedCompileInputs          1 calls
+        0 ms  MakeDirsForMidl                            1 calls
+        0 ms  _Xsd                                       1 calls
+        0 ms  CopyFileToFolders                          1 calls
+        0 ms  AfterBuildGenerateSources                  1 calls
+        0 ms  SelectCustomBuild                          1 calls
+        0 ms  _Link                                      1 calls
+        0 ms  PreLinkEvent                               1 calls
+        0 ms  ComputeManifestGeneratedLinkerInputs       1 calls
+        0 ms  ComputeRCOutputs                           1 calls
+        0 ms  BeforeLink                                 1 calls
+        0 ms  BuildCompile                               1 calls
+        0 ms  _BuildCompileAction                        1 calls
+        0 ms  AfterBuildCompileEvent                     1 calls
+        0 ms  AfterLink                                  1 calls
+        0 ms  _ResourceCompile                           1 calls
+        0 ms  CreateCustomManifestResourceNames          1 calls
+        0 ms  BeforeResourceCompile                      1 calls
+        0 ms  _ClCompile                                 1 calls
+        0 ms  AfterClCompile                             1 calls
+        0 ms  PrepareResourceNames                       1 calls
+        0 ms  SelectClCompile                            1 calls
+        0 ms  AfterResourceCompile                       1 calls
+        0 ms  _SelectedFiles                             1 calls
+        0 ms  ComputeCustomBuildOutput                   1 calls
+        0 ms  PreBuildEvent                              1 calls
+        0 ms  AfterBuild                                 1 calls
+        0 ms  BuildLink                                  1 calls
+        0 ms  _PrepareForReferenceResolution             1 calls
+        0 ms  BeforeResolveReferences                    1 calls
+        0 ms  _BuildLinkAction                           1 calls
+        0 ms  _SplitProjectReferencesByFileExistence     1 calls
+        0 ms  PrepareProjectReferences                   1 calls
+        0 ms  PrepareForRun                              1 calls
+        0 ms  GetFrameworkPaths                          1 calls
+        0 ms  _CopySourceItemsToOutputDirectory          1 calls
+        0 ms  SetBuildDefaultEnvironmentVariables        1 calls
+        0 ms  GetResolvedWinMD                           1 calls
+        0 ms  _CheckWindowsSDKInstalled                  1 calls
+        0 ms  _Deploy                                    1 calls
+        0 ms  ValidateDriverProperties                   1 calls
+        0 ms  ComputeCLGeneratedLinkInputs               1 calls
+        0 ms  CreateSatelliteAssemblies                  1 calls
+        0 ms  ResolveSDKReferences                       1 calls
+        0 ms  _XdcMake                                   1 calls
+        0 ms  BeforeBuildGenerateSources                 1 calls
+        0 ms  ExpandSDKReferences                        1 calls
+        0 ms  _BscMake                                   1 calls
+        0 ms  ResolveAssemblyReferences                  1 calls
+        0 ms  BuildGenerateSourcesTraverse               1 calls
+        0 ms  AfterResolveReferences                     1 calls
+        0 ms  ImplicitlyExpandDesignTimeFacades          1 calls
+        0 ms  ResolveReferences                          1 calls
+        0 ms  _Appverifier                               1 calls
+        0 ms  SetCABuildNativeEnvironmentVariables       1 calls
+        0 ms  BuildLinkTraverse                          1 calls
+        0 ms  MakeDirsForBscMake                         1 calls
+        0 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
+        0 ms  ResolvedXDCMake                            1 calls
+        0 ms  ComputeManifestInputsTargets               1 calls
+        0 ms  ComputeRCGeneratedLinkInputs               1 calls
+        0 ms  PostBuildEvent                             1 calls
+        1 ms  MakeDirsForXdcMake                         1 calls
+        1 ms  ComputeCLCompileGeneratedSbrFiles          1 calls
+        1 ms  SetLinkLibraryPathsForCX                   1 calls
+        1 ms  MakeDirsForResourceCompile                 1 calls
+        1 ms  SetLinkLibraryPaths                        1 calls
+        1 ms  RegisterOutput                             1 calls
+        1 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
+        1 ms  _PrepareForBuild                           1 calls
+        1 ms  GetReferenceAssemblyPaths                  1 calls
+        1 ms  RunWpp                                     1 calls
+        1 ms  DriverBuildNotifications                   1 calls
+        1 ms  ComputeLinkImportLibraryOutputsForClean    1 calls
+        1 ms  ComputeReferenceCLInput                    1 calls
+        1 ms  CheckForCoinstallers                       1 calls
+        1 ms  _GenerateSatelliteAssemblyInputs           1 calls
+        1 ms  ComputeLinkInputsFromProject               1 calls
+        1 ms  ComputeCLCompileGeneratedXDCFiles          1 calls
+        1 ms  _CheckForCompileOutputs                    1 calls
+        1 ms  _Manifest                                  1 calls
+        1 ms  GetCopyToOutputDirectoryItems              1 calls
+        2 ms  AssignTargetPaths                          1 calls
+        2 ms  CopyFilesToOutputDirectory                 1 calls
+        2 ms  DoLinkOutputFilesMatch                     1 calls
+        2 ms  MakeDirsForLink                            1 calls
+        2 ms  AssignProjectConfiguration                 1 calls
+        2 ms  Telemetry_Packaging                        1 calls
+        3 ms  GetPackageFiles                            1 calls
+        4 ms  ComputeCLOutputs                           1 calls
+        4 ms  InitializeBuildStatus                      1 calls
+        4 ms  SetDriverVariables                         1 calls
+        6 ms  SetTelemetryEnvironmentVariables           1 calls
+        6 ms  FinalizeBuildStatus                        1 calls
+        7 ms  CustomBuild                                1 calls
+        7 ms  MakeDirsForCl                              1 calls
+        7 ms  ValidateNTTargetVersion                    1 calls
+        8 ms  WarnCompileDuplicatedFilename              1 calls
+        9 ms  ComputeLinkSwitches                        1 calls
+        9 ms  SplitResourcesByCulture                    1 calls
+       11 ms  FixupCLCompileOptions                      1 calls
+       11 ms  DriverPackageTarget                        1 calls
+       14 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+       16 ms  InfVerif                                   1 calls
+       20 ms  ResolveProjectReferences                   1 calls
+       21 ms  PrepareForBuild                            1 calls
+       27 ms  _HandlePackageFileConflicts                1 calls
+       38 ms  Telemetry                                  1 calls
+      137 ms  StampInf                                   1 calls
+      765 ms  Link                                       1 calls
+      992 ms  Inf2Cat                                    1 calls
+     1809 ms  PackageTestSign                            1 calls
+     1841 ms  DriverTestSign                             1 calls
+     1974 ms  TestSign                                   2 calls
+     2812 ms  ApiValidator                               1 calls
+     8860 ms  ClCompile                                  1 calls
+
+Task Performance Summary:
+        0 ms  ReadLinesFromFile                          1 calls
+        0 ms  CallTarget                                 1 calls
+        0 ms  AssignCulture                              1 calls
+        1 ms  WriteLinesToFile                           1 calls
+        1 ms  CheckVCToolsetVersion                      1 calls
+        2 ms  AssignTargetPath                           6 calls
+        2 ms  ConvertToAbsolutePath                      1 calls
+        2 ms  SetEnv                                    10 calls
+        2 ms  AssignProjectConfiguration                 1 calls
+        2 ms  Message                                   16 calls
+        3 ms  Delete                                     2 calls
+        4 ms  ValidateNTTargetVersion                    1 calls
+        5 ms  Touch                                      2 calls
+        5 ms  MakeDir                                    9 calls
+        6 ms  GetOutOfDateItems                          3 calls
+       14 ms  DPVerifierTask                             1 calls
+       14 ms  Copy                                       2 calls
+       24 ms  ResolvePackageFileConflicts                1 calls
+       40 ms  Telemetry                                  2 calls
+      130 ms  StampInf                                   1 calls
+      758 ms  Link                                       1 calls
+      988 ms  Inf2Cat                                    1 calls
+     1939 ms  ApiValidator                               1 calls
+     1970 ms  SignTask                                   2 calls
+     3650 ms  MSBuild                                    3 calls
+     8856 ms  CL                                         1 calls
